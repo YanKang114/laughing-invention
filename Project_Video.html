@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary | My Personal Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .blog-post {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .blog-post {
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Diary</h1>
+        <p>Thoughts, Stories, and Ideas</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#archives">Archives</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="blog-post">
+            <h2>My First Blog Post</h2>
+            <p class="post-date">Posted on May 15, 2023</p>
+            <p>This is the beginning of my blogging journey. Here I'll share my thoughts and experiences...</p>
+            <a href="#post1" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Learning Web Development</h2>
+            <p class="post-date">Posted on May 18, 2023</p>
+            <p>Discovering the world of coding and web design has been an exciting adventure...</p>
+            <a href="#post2" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Travel Experiences</h2>
+            <p class="post-date">Posted on May 20, 2023</p>
+            <p>Recounting my recent trip to the mountains and the lessons learned from nature...</p>
+            <a href="#post3" class="read-more">Read More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Digital Diary. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#twitter" style="color: white; margin: 0 0.5rem;">Twitter</a>
+            <a href="#facebook" style="color: white; margin: 0 0.5rem;">Facebook</a>
+            <a href="#instagram" style="color: white; margin: 0 0.5rem;">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
